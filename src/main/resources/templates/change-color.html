@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change color</title>
+</head>
+<body>
+<form th:action="@{/change-color}" th:object="${car}" method="post">
+   <input type="hidden" th:field="*{id}">
+    <p>Color: <input type="text" th:field="*{color}"></p>
+    <p><input type="submit" value="Change color"></p>
+</form>
+
+</body>
+</html>

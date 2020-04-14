@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/view-car}" th:object="${car}" method="get">
+    <td th:text="${car.getMark()}"></td>
+    <td th:text="${car.getModel()}"></td>
+    <td th:text="${car.getColor()}"></td>
+</form>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package edu.szymonr.cars;
+package edu.szymonr.cars.model;
 
 public class Car {
     long id;
@@ -24,10 +24,6 @@ public class Car {
 
     public long getId() {
         return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getMark() {
